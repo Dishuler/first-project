@@ -230,7 +230,7 @@
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: url(img/fitness-icon-yellow-5.png) center no-repeat;
+	background: url(img/main/fitness-icon-yellow-5.png) center no-repeat;
  }
  
  .agility {
@@ -248,7 +248,7 @@
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: url(img/gym-49.jpg) center / cover no-repeat;
+	background: url(img/main/gym-49.jpg) center / cover no-repeat;
  }
  
  .main-block {
@@ -266,7 +266,7 @@
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: url(img/fitness-coach-21.png) center / contain no-repeat;
+	background: url(img/main/fitness-coach-21.png) center / contain no-repeat;
  }
  
  .page__form {
@@ -370,7 +370,7 @@
 	 height: 100%;
 	 top: 0;
 	 left: 0;
-	 background: url(img/fitness-coach-13.jpg) center / cover no-repeat;
+	 background: url(img/main/fitness-coach-13.jpg) center / cover no-repeat;
   }
  .get__title {
  }
