@@ -157,13 +157,9 @@
  
  .traning__title {
 	margin-bottom: 8px;
-	 position: relative;
-	z-index: 10;
  }
  
  .traning__text {
-	 position: relative;
-	z-index: 10;
  }
  
  .free__title {
@@ -184,21 +180,15 @@
  }
  
  .agility__title {
-	 position: relative;
-	z-index: 10;
 	text-align: center;
  }
  
  .main-block__title {
 	text-align: center;
 	font-size: 96px;
-	 position: relative;
-	z-index: 10;
  }
  .main-block__text {
 	margin-left: 150px;
-	 position: relative;
-	z-index: 10;
  }
  /*-----------------------font*/
  
@@ -231,7 +221,7 @@
 	justify-content: center;
 	background-color: var(--color-blue);
 	position: relative;
-	z-index: 10;
+	z-index: 1;
  }
  .programs::before {
 	content: "";
@@ -241,7 +231,7 @@
 	top: 0;
 	left: 0;
 	background: url(main/fitness-icon-yellow-5.png) center no-repeat;
-	z-index: 0;
+	z-index: -1;
  }
  
  .agility {
@@ -260,7 +250,7 @@
 	top: 0;
 	left: 0;
 	background: url(main/gym-49.jpg) center / cover no-repeat;
-	z-index: 0;
+	z-index: -1;
  }
  
  .main-block {
@@ -279,7 +269,7 @@
 	top: 0;
 	left: 0;
 	background: url(main/fitness-coach-21.png) center / contain no-repeat;
-	z-index: 0;
+	z-index: -1;
  }
  
  .page__form {
@@ -384,11 +374,9 @@
 	 top: 0;
 	 left: 0;
 	 background: url(main/fitness-coach-13.jpg) center / cover no-repeat;
-	 z-index: 0;
+	 z-index: -1;
   }
  .get__title {
-	 position: relative;
-	z-index: 10;
  }
  
  
