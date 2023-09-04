@@ -1,3 +1,392 @@
-h1 {
-	color: red;
-}
+/*РћР±РЅСѓР»РµРЅРёРµ*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+ }
+ *,
+ *:before,
+ *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+ }
+ :focus,
+ :active {
+	outline: none;
+ }
+ a:focus,
+ a:active {
+	outline: none;
+ }
+ nav,
+ footer,
+ header,
+ aside {
+	display: block;
+ }
+ html,
+ body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+ }
+ input,
+ button,
+ textarea {
+	font-family: inherit;
+ }
+ input::-ms-clear {
+	display: none;
+ }
+ button {
+	cursor: pointer;
+ }
+ button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+ }
+ a,
+ a:visited {
+	text-decoration: none;
+ }
+ a:hover {
+	text-decoration: none;
+ }
+ ul li {
+	list-style: none;
+ }
+ img {
+	vertical-align: top;
+ }
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+	font-size: inherit;
+	font-weight: inherit;
+ }
+ /*--------------------*/
+ 
+ :root {
+	--color-red: #ff2102;
+	--color-black: #000;
+	--color-blue: #3e22ff;
+	--color-white: #fff;
+	--color-yellow: #d2b569;
+ }
+ 
+ .visually-hidden {
+	 position: absolute; /* элемент вырывают из потока */
+	 width: 1px; /* делают элемент очень маленьким, но таким, чтобы не пропал совсем */
+	 height: 1px;
+	 margin: -1px; /* элемент убирают из поля зрения, сдвинув на размер самого себя */
+	 padding: 0; /* обнуляют отступы, они есть у некоторых элементов по умолчанию */
+	 border: 0; /* убирают границу, она тоже может быть у каких-то элементов */
+	 clip: rect(0 0 0 0); /* это свойство обрезает видимую область до нулевого значения */
+	 overflow: hidden; /* на всякий случай скрывают видимое за пределами блока */
+ } 
+ 
+ html,
+ body {
+	max-width: 1440px;
+ 
+	color: var(--color-white);
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 150%; /* 33/22 */
+	font-family: "Montserrat", sans-serif;
+ }
+ 
+ [class*="__title"] {
+	font-style: italic;
+	font-weight: 800;
+	font-size: 24px;
+	text-transform: capitalize;
+ }
+ 
+ /*layout---------------------*/
+ .page {
+	 height: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+	grid-template-rows: repeat(3, 33.3334%);
+	grid-auto-flow: dense;
+ }
+ 
+ .page > * {
+	padding: 38px;
+ }
+ 
+ .page__traning {
+ }
+ 
+ .page__free {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 8px;
+ }
+ 
+ .page__cardio {
+ }
+ 
+ .page__programms {
+ }
+ 
+ .page__agility {
+ }
+ 
+ .page__main-block {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 40px;
+	grid-column: span 2;
+ }
+ /*---------------------layout*/
+ 
+ /*font-----------------------*/
+ 
+ .traning__title {
+	margin-bottom: 8px;
+ }
+ 
+ .traning__text {
+ }
+ 
+ .free__title {
+ }
+ 
+ .free__text {
+ }
+ 
+ .cardio__title {
+	margin-bottom: 8px;
+ }
+ 
+ .cardio__text {
+ }
+ 
+ .programs__title {
+	text-align: center;
+ }
+ 
+ .agility__title {
+	text-align: center;
+ }
+ 
+ .main-block__title {
+	text-align: center;
+	font-size: 96px;
+ }
+ .main-block__text {
+	margin-left: 150px;
+ }
+ /*-----------------------font*/
+ 
+ /*block-----------------------*/
+ .traning {
+	background-color: var(--color-black);
+ }
+ 
+ .traning__image {
+	width: 85px;
+	margin-bottom: 30px;
+ }
+ 
+ .free {
+	background-color: var(--color-red);
+ }
+ 
+ .cardio {
+	color: var(--color-black);
+ }
+ 
+ .cardio__image {
+	width: 85px;
+	margin-bottom: 30px;
+ }
+ 
+ .programs {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--color-blue);
+	position: relative;
+	z-index: 1;
+ }
+ .programs::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: url(../img/main/fitness-icon-yellow-5.png) center no-repeat;
+	z-index: -1;
+ }
+ 
+ .agility {
+	grid-row: span 2;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+ }
+ 
+ .agility::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: url(../img/main/gym-49.jpg) center / cover no-repeat;
+	z-index: -1;
+ }
+ 
+ .main-block {
+	background-color: var(--color-red);
+	position: relative;
+	z-index: 10;
+ 
+	grid-row: 2 / span 1;
+	grid-column: 2 / span 2;
+ }
+ .main-block::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: url(../img/main/fitness-coach-21.png) center / contain no-repeat;
+	z-index: -1;
+ }
+ 
+ .page__form {
+	 background-color: var(--color-black);
+ }
+ /*-----------------------block*/
+ 
+ 
+ .page__form {
+	 grid-row: span 2;
+ }
+ .form {
+ }
+ .form-block {
+ }
+ .form-block__contact-info {
+ }
+ .contact-info {
+	 display: flex;
+	 flex-direction: column;
+	 gap: 20px;
+ }
+ 
+ legend {
+	 margin-bottom: 20px;
+	 font-style: italic;
+	font-weight: 900;
+	font-size: 24px;
+	text-transform: capitalize;
+ }
+ 
+ input {
+	 font-family: "Montserrat", sans-serif;
+	 background-color: transparent;
+	 padding: 15px;
+	 border: 1px solid var(--color-white);
+	 color: var(--color-white);
+ }
+ 
+ textarea {
+	 font-family: "Montserrat", sans-serif;
+	 background-color: transparent;
+	 padding: 15px;
+	 border: 1px solid var(--color-white);
+	 color: var(--color-white);
+	 max-height: 130px;
+ }
+ 
+ button {
+	 align-self: flex-end;
+	 font-family: "Montserrat", sans-serif;
+	 font-style: italic;
+	 font-size: 12px;
+	 text-transform: capitalize;
+	 background-color: var(--color-red);
+	 padding: 15px 35px;
+	 color: var(--color-white);
+ }
+ .visually-hidden {
+ }
+ .contact-info__name {
+ }
+ .contact-info__email {
+ }
+ .contact-info__area {
+ }
+ 
+ 
+ .page__goal {
+ }
+ .goal {
+	 background-color: var(--color-black);
+	 text-align: right;
+ }
+ .goal__title {
+	 margin-bottom: 20px;
+ }
+ .goal__text {
+	 color: var(--color-yellow);
+	 text-transform: uppercase;
+	 letter-spacing: .7em;
+ }
+ 
+ 
+ 
+ .page__get {
+ }
+ .get {
+ }
+ 
+ .get {
+	 display: flex;
+	 align-items: center;
+	 position: relative;
+	 z-index: 10;
+  }
+  .get::before {
+	 content: "";
+	 position: absolute;
+	 width: 100%;
+	 height: 100%;
+	 top: 0;
+	 left: 0;
+	 background: url(../img/main/fitness-coach-13.jpg) center / cover no-repeat;
+	 z-index: -1;
+  }
+ .get__title {
+ }
+ 
+ 
+ @media (max-width: 1199px) {
+	 .main-block {
+		 grid-row: 1 / span 1;
+		 grid-column: 1 / span 2;
+	 }
+	 .page {
+		grid-template-rows: repeat(auto-fill, minmax(270px, auto));
+		grid-auto-flow: dense;
+	 }
+ }

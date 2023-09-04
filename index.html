@@ -1,14 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-</head>
-<body>
-	<h1>Hello world!</h1>
-	<h2>Hello world!</h2>
-	<h3>Hello world!</h3>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	 <link rel="preconnect" href="https://fonts.googleapis.com">
+	 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/test.css" />
+    <title>costaway</title>
+  </head>
+
+  <body>
+	<main class="page">
+		<section class="page__traning traning">
+			<img
+				src="./img/main/fitness-icon-blue-3.png"
+				alt="гантеля"
+				class="traning__image"
+			/>
+			<h2 class="traning__title">Weight Tranning</h2>
+			<p class="traning__text">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, molestias debitis ut.
+			</p>
+		</section>
+		<section class="page__free free">
+			<h2 class="free__title">7 day FREE Trial</h2>
+			<p class="free__text">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, molestias debitis ut.
+			</p>
+		</section>
+		<section class="page__cardio cardio">
+			<img
+			src="./img/main/fitness-icon-purple-1.png"
+			alt="гантеля"
+			class="cardio__image"
+		/>
+		<h2 class="cardio__title">Cardio Workout</h2>
+		<p class="cardio__text">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, molestias debitis ut.
+		</p>
+		</section>
+		<section class="page__programms programs">
+			<h2 class="programs__title">
+				traning Programs
+			</h2>
+		</section>
+		<section class="page__agility agility">
+			<h2 class="agility__title">
+				Agility Traning
+			</h2>
+		</section>
+			<section class="page__main-block main-block">
+				<h2 class="main-block__title">Fitness</h2>
+				<p class="main-block__text">what works for you</p>
+			</section>
+		<section class="page__form form">
+			<form action="" class="form-block">
+				<fieldset class="form-block__contact-info contact-info">
+					<legend>Book a session</legend>
+					<label for="name" class="visually-hidden">Name</label>
+					<input class="contact-info__name" type="text" placeholder="Name" id="name" />
+					<label for="email" class="visually-hidden">Email</label>
+					<input class="contact-info__email" type="email" placeholder="Email Address" id="email" />
+					<label for="area" class="visually-hidden">Email</label>
+					<textarea class="contact-info__area" name="area" id="area" placeholder="Message" cols="30" rows="5"></textarea>
+					<button type="submit">Send Now</button>
+			  </fieldset>
+			</form>
+		</section>
+		<section class="page__goal goal">
+			<h2 class="goal__title">goal setting</h2>
+			<p class="goal__text">
+				We develop a plan thats works for you. 
+			</p>
+		</section>
+		<section class="page__get get">
+			<h2 class="get__title">
+				Get Started
+			</h2>
+		</section>
+	</main>
+  </body>
 </html>
