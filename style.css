@@ -231,7 +231,6 @@
 	top: 0;
 	left: 0;
 	background: url(img/fitness-icon-yellow-5.png) center no-repeat;
-	z-index: -1;
  }
  
  .agility {
@@ -250,7 +249,6 @@
 	top: 0;
 	left: 0;
 	background: url(img/gym-49.jpg) center / cover no-repeat;
-	z-index: -1;
  }
  
  .main-block {
@@ -269,7 +267,6 @@
 	top: 0;
 	left: 0;
 	background: url(img/fitness-coach-21.png) center / contain no-repeat;
-	z-index: -1;
  }
  
  .page__form {
@@ -374,7 +371,6 @@
 	 top: 0;
 	 left: 0;
 	 background: url(img/fitness-coach-13.jpg) center / cover no-repeat;
-	 z-index: -1;
   }
  .get__title {
  }
