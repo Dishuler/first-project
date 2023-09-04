@@ -157,9 +157,13 @@
  
  .traning__title {
 	margin-bottom: 8px;
+	 position: relative;
+	z-index: 10;
  }
  
  .traning__text {
+	 position: relative;
+	z-index: 10;
  }
  
  .free__title {
@@ -180,15 +184,21 @@
  }
  
  .agility__title {
+	 position: relative;
+	z-index: 10;
 	text-align: center;
  }
  
  .main-block__title {
 	text-align: center;
 	font-size: 96px;
+	 position: relative;
+	z-index: 10;
  }
  .main-block__text {
 	margin-left: 150px;
+	 position: relative;
+	z-index: 10;
  }
  /*-----------------------font*/
  
@@ -377,6 +387,8 @@
 	 z-index: -1;
   }
  .get__title {
+	 position: relative;
+	z-index: 10;
  }
  
  
